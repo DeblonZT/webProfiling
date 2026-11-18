@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="60%" stop-color="#14283b" />
+      <stop offset="100%" stop-color="#004d25" />
+    </linearGradient>
+    <linearGradient id="trackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C40000" />
+      <stop offset="100%" stop-color="#800000" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Morning Atmospheric Horizon -->
+  <rect width="800" height="500" fill="url(#skyGrad)" />
+
+  <!-- Morning Sun Rise on Field -->
+  <circle cx="400" cy="240" r="100" fill="#F8F000" opacity="0.15" filter="blur(20px)" />
+  <circle cx="400" cy="240" r="50" fill="#F8F000" opacity="0.25" />
+
+  <!-- Field / Horizon lines -->
+  <ellipse cx="400" cy="460" rx="480" ry="170" fill="#006629" opacity="0.8" />
+  
+  <!-- Running Track Curve -->
+  <path d="M 0 380 Q 400 310 800 380 L 800 500 L 0 500 Z" fill="url(#trackGrad)" opacity="0.9" />
+  <!-- Track white running lanes -->
+  <path d="M 0 410 Q 400 340 800 410" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="16,10" opacity="0.6" />
+  <path d="M 0 450 Q 400 380 800 450" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="20,12" opacity="0.6" />
+
+  <!-- Runners Silhouettes (Sports & Camaraderie) -->
+  <!-- Runner 1 (Leader) -->
+  <g fill="#FFFFFF">
+    <circle cx="400" cy="235" r="13" />
+    <!-- Torso and limbs in energetic run pose -->
+    <path d="M 395 250 L 407 275 L 392 315 L 377 312 L 390 278 L 382 265 Z" />
+    <path d="M 405 272 L 425 295 L 435 325 L 424 328 L 415 300 Z" />
+    <!-- Arms -->
+    <path d="M 397 254 L 375 268 L 372 285 L 366 282 L 370 264 Z" />
+    <path d="M 403 254 L 422 262 L 430 252 L 435 256 L 424 270 Z" />
+  </g>
+
+  <!-- Runner 2 (Left wing) -->
+  <g fill="#03A9F4" opacity="0.95">
+    <circle cx="330" cy="250" r="12" />
+    <path d="M 326 264 L 336 286 L 322 322 L 310 318 L 322 288 Z" />
+    <path d="M 334 284 L 350 305 L 358 332 L 348 335 L 340 310 Z" />
+    <path d="M 327 267 L 310 279 L 308 293 L 302 290 L 306 276 Z" />
+    <path d="M 333 267 L 348 274 L 355 265 L 360 269 Z" />
+  </g>
+
+  <!-- Runner 3 (Right wing) -->
+  <g fill="#F8F000" opacity="0.9">
+    <circle cx="470" cy="250" r="12" />
+    <path d="M 466 264 L 476 286 L 462 322 L 450 318 L 462 288 Z" />
+    <path d="M 474 284 L 490 305 L 498 332 L 488 335 L 480 310 Z" />
+    <path d="M 467 267 L 450 279 L 448 293 L 442 290 L 446 276 Z" />
+    <path d="M 473 267 L 488 274 L 495 265 L 500 269 Z" />
+  </g>
+
+  <!-- Group runners silhouette in distance -->
+  <g fill="#0B1220" opacity="0.5">
+    <circle cx="260" cy="275" r="9" />
+    <path d="M 253 285 L 267 285 L 264 320 L 253 320 Z" />
+    <circle cx="540" cy="275" r="9" />
+    <path d="M 533 285 L 547 285 L 544 320 L 533 320 Z" />
+  </g>
+
+  <!-- Banner badge -->
+  <rect x="250" y="420" width="300" height="42" rx="21" fill="#0B1220" stroke="#009038" stroke-width="2" />
+  <text x="400" y="446" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">
+    PEMBINAAN FISIK &amp; JIWA KORSA
+  </text>
+  <circle cx="270" cy="441" r="5" fill="#F8F000" />
+</svg>

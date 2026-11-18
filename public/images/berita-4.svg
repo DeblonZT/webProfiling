@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberWarnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="50%" stop-color="#2a0808" />
+      <stop offset="100%" stop-color="#070c17" />
+    </linearGradient>
+    <linearGradient id="dangerWarn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C40000" />
+      <stop offset="100%" stop-color="#FF5252" />
+    </linearGradient>
+    <linearGradient id="hookGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#03A9F4" />
+      <stop offset="100%" stop-color="#FF1744" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#cyberWarnBg)" />
+
+  <!-- Binary code stream backdrop -->
+  <g fill="#03A9F4" opacity="0.15" font-family="monospace" font-size="12">
+    <text x="50" y="80">01010000 01001000 01001001</text>
+    <text x="50" y="110">01010011 01001000 01001001</text>
+    <text x="50" y="140">01001110 01000111 00100000</text>
+    <text x="50" y="170">01000001 01001100 01000101</text>
+    <text x="50" y="200">01010010 01010100 00100001</text>
+
+    <text x="580" y="80">11010000 11001000 11001001</text>
+    <text x="580" y="110">11010011 11001000 11001001</text>
+    <text x="580" y="140">11001110 11000111 10100000</text>
+    <text x="580" y="170">11000001 11001100 11000101</text>
+    <text x="580" y="200">11010010 11010100 10100001</text>
+  </g>
+
+  <!-- Giant Warning Triangle Shield in Center -->
+  <g transform="translate(400, 210)">
+    <!-- Radar pulse circles -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#C40000" stroke-width="1.5" opacity="0.3" stroke-dasharray="6,6" />
+    <circle cx="0" cy="0" r="170" fill="none" stroke="#FF5252" stroke-width="0.8" opacity="0.2" />
+
+    <!-- Smartphone Frame -->
+    <rect x="-80" y="-130" width="160" height="260" rx="20" fill="#0B1220" stroke="#03A9F4" stroke-width="3" />
+    <rect x="-70" y="-105" width="140" height="205" rx="8" fill="#141E33" />
+    
+    <!-- Phone speaker & home pill -->
+    <line x1="-20" y1="-118" x2="20" y2="-118" stroke="#4A5568" stroke-width="3" stroke-linecap="round" />
+    <circle cx="0" cy="115" r="5" fill="#4A5568" />
+
+    <!-- Phishing Hook descending into phone -->
+    <path d="M 0 -170 L 0 -40 C 0 10 40 10 40 -20 C 40 -35 25 -35 25 -20" fill="none" stroke="url(#hookGrad)" stroke-width="4" stroke-linecap="round" />
+    <!-- Bait on hook: Malicious Envelope / APK symbol -->
+    <g transform="translate(15, -45)">
+      <rect x="-18" y="-12" width="36" height="24" rx="4" fill="#C40000" stroke="#FFFFFF" stroke-width="1.5" />
+      <polyline points="-18,-12 0,2 18,-12" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+    </g>
+
+    <!-- Warning Exclamation Mark Shield below bait -->
+    <path d="M -30 20 L 0 5 L 30 20 L 30 50 C 30 75 0 90 0 90 C 0 90 -30 75 -30 50 Z" fill="#C40000" stroke="#FFFFFF" stroke-width="2" />
+    <text x="0" y="58" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" text-anchor="middle">!</text>
+  </g>
+
+  <!-- Cyber Lock / Safe indicators on the sides -->
+  <!-- Left Side: Unlocked Padlock (Vulnerable) -->
+  <g transform="translate(180, 250)">
+    <rect x="-24" y="-5" width="48" height="40" rx="6" fill="#C40000" opacity="0.85" />
+    <path d="M -14 -5 V -20 C -14 -32 6 -32 6 -20" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="0" cy="15" r="4" fill="#FFFFFF" />
+  </g>
+
+  <!-- Right Side: Locked Shield (Protected) -->
+  <g transform="translate(620, 250)">
+    <path d="M -24 -15 L 0 -25 L 24 -15 V 10 C 24 30 0 45 0 45 C 0 45 -24 30 -24 10 Z" fill="#009038" opacity="0.9" />
+    <path d="M -8 10 L -2 16 L 10 0" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Banner label badge -->
+  <rect x="230" y="420" width="340" height="42" rx="21" fill="#0B1220" stroke="#C40000" stroke-width="2" />
+  <text x="400" y="446" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">
+    WASPADAI PHISHING &amp; MALWARE APK
+  </text>
+  <circle cx="250" cy="441" r="5" fill="#C40000" />
+</svg>

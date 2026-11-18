@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="persitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="45%" stop-color="#1b2a47" />
+      <stop offset="100%" stop-color="#0e3d2a" />
+    </linearGradient>
+    <linearGradient id="goldHeart" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F000" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+    <linearGradient id="emeraldRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#009038" />
+      <stop offset="100%" stop-color="#00bf4b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#persitBg)" />
+
+  <!-- Subtle floral / decorative wreath backdrop -->
+  <g stroke="#009038" stroke-width="1.2" fill="none" opacity="0.3">
+    <circle cx="400" cy="220" r="160" stroke-dasharray="6,8" />
+    <circle cx="400" cy="220" r="130" stroke-dasharray="4,6" />
+    <!-- Leaf shapes -->
+    <path d="M 270 200 Q 250 170 270 140 Q 290 170 270 200 Z" fill="#009038" opacity="0.2" />
+    <path d="M 530 200 Q 550 170 530 140 Q 510 170 530 200 Z" fill="#009038" opacity="0.2" />
+  </g>
+
+  <!-- Hands Offering / Caring (Social Care & Solidarity Symbol) -->
+  <!-- Left Hand Silhouette -->
+  <path d="M 270 330 C 310 320 340 300 375 260 C 365 245 350 250 330 265 C 310 280 290 300 270 330 Z" fill="#009038" opacity="0.85" />
+  <!-- Right Hand Silhouette -->
+  <path d="M 530 330 C 490 320 460 300 425 260 C 435 245 450 250 470 265 C 490 280 510 300 530 330 Z" fill="#009038" opacity="0.85" />
+
+  <!-- Central Emblem: Caring Heart & Kartika Chandra Lotus Silhouette -->
+  <g transform="translate(400, 200)">
+    <!-- Heart Symbol -->
+    <path d="M 0 35 C -60 -25 -60 -75 0 -105 C 60 -75 60 -25 0 35 Z" fill="url(#goldHeart)" opacity="0.9" filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.4))" />
+    <!-- White Inner Star (Kartika) -->
+    <polygon points="0,-75 6,-55 25,-55 10,-42 16,-22 0,-34 -16,-22 -10,-42 -25,-55 -6,-55" fill="#0B1220" opacity="0.85" />
+    <!-- Caring Silhouette People inside Heart -->
+    <circle cx="-12" cy="-45" r="5" fill="#0B1220" />
+    <circle cx="12" cy="-45" r="5" fill="#0B1220" />
+  </g>
+
+  <!-- Persit Members Gathering Silhouette in background -->
+  <g fill="#162947" opacity="0.7">
+    <!-- Member 1 -->
+    <circle cx="240" cy="230" r="14" />
+    <path d="M 220 280 C 220 252 260 252 260 280 Z" />
+    <!-- Member 2 -->
+    <circle cx="560" cy="230" r="14" />
+    <path d="M 540 280 C 540 252 580 252 580 280 Z" />
+  </g>
+
+  <!-- Banner label badge -->
+  <rect x="230" y="420" width="340" height="42" rx="21" fill="#0B1220" stroke="#009038" stroke-width="2" />
+  <text x="400" y="446" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">
+    PERSIT KCK RANTING 2 SANSIDAM
+  </text>
+  <circle cx="250" cy="441" r="5" fill="#00bf4b" />
+</svg>
